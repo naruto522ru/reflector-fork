@@ -1,5 +1,6 @@
 #Maintainer: Xyne <gro xunilhcra enyx, backwards>
 #Author fork patch: IA <itachi522ru@gmail.com>
+_NAME_ACCOUNT_GITHUB=naruto522ru
 old_pkgname=reflector
 pkgname=reflector2
 pkgver=2023
@@ -40,7 +41,7 @@ sed -i '52d' Reflector2.py
 sed -i '52iDEFAULT_URL \= \"https://archlinux.org/mirrors/status/json/\"' Reflector2.py
 sed -i '53iURL \= os.getenv\(\"MIRROR_URL\"\, DEFAULT_URL\)' Reflector2.py
 sed -i '13d' $pkgname.service
-sed -i '13iEnvironment\=\"XDG_CACHE_HOME\=/var/cache/reflector2\" \"MIRROR_URL=https://raw.githubusercontent.com/naruto522ru/dot_arch/refs/heads/main/json\"' $pkgname.service
+sed -i "13iEnvironment\=\"XDG_CACHE_HOME\=/var/cache/reflector2\" \"MIRROR_URL=https://raw.githubusercontent.com/${_NAME_ACCOUNT_GITHUB}/dot_arch/refs/heads/main/json\"" $pkgname.service
 #
 #Fix URL in service file
 sed -i '3s/Reflector2/Reflector/g' $pkgname.service
