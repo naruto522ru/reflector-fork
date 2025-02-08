@@ -1,6 +1,6 @@
 #Maintainer: Xyne <gro xunilhcra enyx, backwards>
 #Author fork patch: IA <itachi522ru@gmail.com>
-_NAME_ACCOUNT_GITHUB=naruto522ru
+_NAME_ACCOUNT_GITHUB=you-oops-dev
 old_pkgname=reflector
 pkgname=reflector2
 pkgver=2023
